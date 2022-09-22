@@ -1,2 +1,3 @@
-# DTCall
-利用 Web 实现视频会议（bushi）
+# DingTalkCall
+仿钉钉视频会议界面
+打开后点击屏幕任意位置播放背景音乐
