@@ -241,11 +241,19 @@
   				}
  			}
 		}
+   		//点击页面任意位置播放背景音乐
    		document.documentElement.addEventListener("click", function (){document.getElementById('bgm').play();});
+        //按钮定位
         var jjjt = document.getElementById('jjjt');
 		var sp = document.getElementById('sp');
-		jjjt.style.left = "calc(50% - " + jjjt.clientWidth / 2 + "px)";
-		sp.style.left = "calc(50% - " + sp.clientWidth / 2 + "px)";
+      	function andw(){
+			jjjt.style.left = "calc(50% - " + jjjt.clientWidth / 2 + "px)";
+			sp.style.left = "calc(50% - " + sp.clientWidth / 2 + "px)";
+      	}
+        andw();
+        //屏幕旋转时自动重新定位按钮
+        //监听屏幕旋转源码来自：https://blog.csdn.net/Lc_style/article/details/121100574
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function (){window.setTimeout('andw();', 10);}, false);
     </script>
     </body>
 </html>

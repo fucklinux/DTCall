@@ -1,8 +1,8 @@
 {
 	"appName": "DTCall",
 	"appPackageName": "com.burger.dtcall",
-	"appVersionName": "1.0.2",
-	"appVersionCode": 100002,
+	"appVersionName": "1.0.3",
+	"appVersionCode": 100003,
 	"data": {		
 		"启用顶栏": false,
 		"顶栏标题": "DTCall",
