@@ -74,7 +74,6 @@
                	bottom: 10%;
                	width: 70%;
               	height: 88px;
-                left: 15%;
                 max-width: 600px;
             }
             .jj{
@@ -124,7 +123,6 @@
                	bottom: calc(10% + 104px);
                	width: 70%;
               	height: 88px;
-                left: 15%;
                 max-width: 600px;
             }
             .spjt{
@@ -171,7 +169,7 @@
         	<i class="mdui-icon material-icons zhyztb">equalizer</i>
            	<div class="zhyzwz"> 50 人在会议中</div>
         </div>
-        <div class="jjjt">
+        <div class="jjjt" id="jjjt">
         	<div class="jj">
            		<button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white jjan" mdui-dialog="{target: '#siteInfo'}"><i class="mdui-icon material-icons jjtb">call_end</i></button>
                 <div class="jjwz">拒绝</div>
@@ -181,7 +179,7 @@
                 <div class="jtwz">接听</div>
             </div>
         </div>
-        <div class="sp">
+        <div class="sp" id="sp">
         	<div class="spjt">
         		<button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white spjtan" mdui-dialog="{target: '#siteInfo'}"><i class="mdui-icon material-icons spjttb">videocam</i></button>
             	<div class="spjtwz">视频接听</div>
@@ -244,6 +242,10 @@
  			}
 		}
    		document.documentElement.addEventListener("click", function (){document.getElementById('bgm').play();});
+        var jjjt = document.getElementById('jjjt');
+		var sp = document.getElementById('sp');
+		jjjt.style.left = "calc(50% - " + jjjt.clientWidth / 2 + "px)";
+		sp.style.left = "calc(50% - " + sp.clientWidth / 2 + "px)";
     </script>
     </body>
 </html>
